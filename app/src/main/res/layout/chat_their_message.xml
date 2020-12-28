@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="2dp"
+    android:paddingLeft="15dp"
+    android:clipToPadding="false">
+
+    <ImageView
+        android:id="@+id/chat_avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:id="@+id/chat_username"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_toRightOf="@+id/chat_avatar"
+        android:layout_toEndOf="@+id/chat_avatar"
+        android:layout_alignTop="@+id/chat_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:textStyle="bold"
+       />
+
+    <TextView
+        android:maxWidth="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:id="@+id/chat_message_body"
+        android:layout_below="@+id/chat_username"
+        android:background="@drawable/chat_their_message_shape"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@+id/chat_avatar"
+        android:layout_toEndOf="@+id/chat_avatar"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="16dp"
+        android:elevation="2dp"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/chat_message_body"
+        android:layout_toRightOf="@id/chat_message_body"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:alpha="0.5"
+        />
+
+</RelativeLayout>

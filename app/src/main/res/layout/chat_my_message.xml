@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="2dp"
+    android:paddingRight="15dp"
+    android:clipToPadding="false">
+
+    <TextView
+        android:maxWidth="350dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_message_body"
+        android:background="@drawable/chat_my_message_shape"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:textSize="16sp"
+        android:layout_alignParentRight="true"
+        android:text="Placeholder message"
+        />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/chat_message_body"
+        android:layout_toLeftOf="@id/chat_message_body"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:maxLines="1"
+        android:alpha="0.5"
+        />
+
+</RelativeLayout>

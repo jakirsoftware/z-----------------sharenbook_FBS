@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+
+    <!-- app wide typography dimensions -->
+    <dimen name="title">16sp</dimen>
+    <dimen name="titlebig">22sp</dimen>
+    <dimen name="paragraph">16sp</dimen>
+
+
+    <dimen name="book_subtitle_font_dim">12sp</dimen>
+    <dimen name="cardview_book_info_margin">12dp</dimen>
+
+
+    <!-- Card specific dimension  -->
+    <dimen name="card_corner_radius">0dp</dimen>
+
+    <dimen name="grip_view_entry_size">100dp</dimen>
+    <dimen name="grip_view_spacing">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">5dp</dimen>
+    <dimen name="appbar_height">64dp</dimen>
+
+</resources>

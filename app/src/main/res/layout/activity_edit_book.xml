@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editbook_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditBookActivity">
+
+    <ScrollView
+        android:id="@+id/editbook_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp">
+
+        <!-- external wrapper-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Top bar -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <!-- colored bar -->
+                <ImageView
+                    android:id="@+id/editbook_topbar_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary" />
+
+                <!-- Book thumbnails -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/editbook_rl_addPhoto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp">
+
+                        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+
+                            android:id="@+id/editbook_iv_addBookPhotoBackground"
+                            android:layout_width="100dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@color/lightGrey" />
+
+                        <!-- Delete photo Floating Action Button -->
+                        <ImageButton
+                            android:id="@+id/editbook_ib_addBookPhoto"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="18dp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingTop="50dp"
+                            android:background="@drawable/roundedbuttons_success"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_photo_camera_black_24dp" />
+
+                        <Button
+                            android:id="@+id/editbook_tv_addBookPhoto"
+                            style="@style/TextViewHeading"
+                            android:layout_width="100dp"
+                            android:layout_height="75dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+
+                            android:layout_marginTop="72dp"
+                            android:gravity="center_horizontal"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:text="@string/default_addPhoto_heading"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                    <!-- display collection of the user photo book -->
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/editbook_rv_bookPhotos"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!-- Content -->
+            <LinearLayout
+                android:id="@+id/editbook_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+
+                <!-- isbn-->
+                <TextView
+                    android:id="@+id/editbook_tv_isbn"
+                    style="@style/TextViewHeading"
+                    android:text="@string/default_isbn_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_isbn"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_isbn"
+                    android:inputType="number"
+                    android:maxLength="13" />
+
+                <!-- title -->
+                <TextView
+                    android:id="@+id/editbook_tv_title"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_title_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_title"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_title"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textAllCaps="false" />
+
+                <!-- sub title -->
+                <TextView
+                    android:id="@+id/editbook_tv_subtitle"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_subtitle_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_subtitle"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_subtitle"
+                    android:inputType="text"
+                    android:maxLength="100" />
+
+                <!-- authors -->
+                <TextView
+                    android:id="@+id/editbook_tv_authors"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_authors_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_authors"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_authors"
+                    android:inputType="text"
+                    android:maxLength="150" />
+
+                <!-- publisher -->
+                <TextView
+                    android:id="@+id/editbook_tv_publisher"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_publisher_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_publisher"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_publisher"
+                    android:inputType="text"
+                    android:maxLength="100" />
+
+                <!-- published date -->
+                <TextView
+                    android:id="@+id/editbook_tv_publishedDate"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_published_date_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_publishedDate"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_published_date"
+                    android:inputType="date"
+                    android:maxLength="32" />
+
+                <!-- description -->
+                <TextView
+                    android:id="@+id/editbook_tv_description"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_description_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_description"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_description"
+                    android:inputType="text"
+                    android:maxLength="2000" />
+
+                <!-- page count -->
+                <TextView
+                    android:id="@+id/editbook_tv_pageCount"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_page_count_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_pageCount"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_page_count"
+                    android:inputType="number" />
+
+                <!-- categories -->
+                <TextView
+                    android:id="@+id/editbook_tv_categories"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_categories_heading" />
+
+                <it.polito.mad.sharenbook.views.ExpandableHeightGridView
+                    android:id="@+id/editbook_ehgv_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <!-- language -->
+                <TextView
+                    android:id="@+id/editbook_tv_language"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_language_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_language"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_language"
+                    android:inputType="text"
+                    android:maxLength="150" />
+
+                <!-- location -->
+                <TextView
+                    android:id="@+id/editbook_tv_location"
+                    style="@style/TextViewHeading"
+
+                    android:text="@string/default_location_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_location"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_location"
+                    android:inputType="text"
+                    android:maxLength="250" />
+
+                <!-- book conditions -->
+                <TextView
+                    android:id="@+id/editbook_tv_bookConditions"
+                    style="@style/TextViewHeading"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/default_book_condition_heading" />
+
+                <it.polito.mad.sharenbook.views.ExpandableHeightGridView
+                    android:id="@+id/editbook_ehgv_conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginBottom="16dp"
+                    />
+
+                <!-- additional tags -->
+                <TextView
+                    android:id="@+id/editbook_tv_tags"
+                    style="@style/TextViewHeading"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/default_tags_heading" />
+
+                <EditText
+                    android:id="@+id/editbook_et_tags"
+                    style="@style/TextViewContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/default_tags"
+                    android:inputType="text"
+                    android:maxLength="250" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/darkGrey"
+        app:itemBackground="@drawable/nav_bar_bg_selector"
+        app:itemIconTint="@drawable/nav_bar_selector"
+        app:itemTextColor="@drawable/nav_bar_selector"
+        app:menu="@menu/navigation" />
+
+    <!-- Save Floating Action Button-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editbook_fab_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_check_black_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:layout_anchor="@id/navigation"
+        app:layout_anchorGravity="end" />
+
+</android.support.design.widget.CoordinatorLayout>
+

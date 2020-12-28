@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/showcase_rv_book_photo"
+        android:layout_width="112dp"
+        android:layout_height="168dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/showcase_rv_book_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:src="@drawable/ic_bookmark"
+        android:tint="@color/redButton"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"/>
+
+    <ImageView
+        android:id="@+id/showcase_rv_unavailable_bg"
+        android:layout_width="112dp"
+        android:layout_height="168dp"
+        android:background="#DD353638"
+        android:visibility="gone"
+        android:src="@drawable/ic_block_black_70dp"
+        android:scaleType="center"
+        android:tint="@color/blockGrey"
+        android:alpha="0.8"
+        app:layout_constraintTop_toTopOf="@id/showcase_rv_book_photo"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo" />
+
+    <android.support.v4.widget.Space
+        android:id="@+id/marginSpacer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/showcase_rv_book_photo"
+        app:layout_constraintLeft_toLeftOf="@id/showcase_rv_book_photo"
+        app:layout_constraintRight_toRightOf="@id/showcase_rv_book_photo" />
+
+    <TextView
+        android:id="@+id/showcase_rv_book_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/primaryText"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_photo"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo" />
+
+    <ImageView
+        android:id="@+id/showcase_rv_book_options"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="40dp"
+        android:layout_height="54dp"
+        android:paddingTop="15dp"
+        android:paddingStart="25dp"
+        android:paddingLeft="25dp"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:scaleType="center"
+        android:tint="@color/secondaryText"
+        app:layout_constraintTop_toTopOf="@id/marginSpacer"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/showcase_rv_book_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:drawableLeft="@drawable/ic_location_black_12dp"
+        android:drawablePadding="2dp"
+        android:drawableStart="@drawable/ic_location_black_12dp"
+        android:paddingLeft="-2dp"
+        android:paddingStart="-2dp"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_title" />
+
+    <TextView
+        android:id="@+id/exchange_reviewed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:textColor="@color/greenButton"
+        android:textStyle="bold"
+        android:text="@string/exchange_reviewed"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_location" />
+
+    <TextView
+        android:id="@+id/req_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:textColor="@color/redButton"
+        android:textStyle="bold"
+        android:text="@string/borrow_req_counter"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_location" />
+
+    <TextView
+        android:id="@+id/undo_req"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:textColor="@color/redButton"
+        android:textStyle="bold"
+        android:text="@string/borrow_req_counter"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_location" />
+
+    <Button
+        android:id="@+id/exchange_not_reviewed"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:text="@string/not_reviewed"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp"
+        android:background="@drawable/button_bg_transparent_yellow"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_location" />
+
+    <Button
+        android:id="@+id/undo_req_button"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:text="@string/undo_borrow_req"
+        android:textColor="@color/redButton"
+        android:textSize="10sp"
+        android:background="@drawable/button_bg_transparent_red"
+        app:layout_constraintStart_toStartOf="@id/showcase_rv_book_photo"
+        app:layout_constraintEnd_toEndOf="@id/showcase_rv_book_photo"
+        app:layout_constraintTop_toBottomOf="@id/showcase_rv_book_location" />
+
+</android.support.constraint.ConstraintLayout>

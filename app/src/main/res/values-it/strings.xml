@@ -1,0 +1,391 @@
+<resources>
+    <string name="app_name">Share\'nBook</string>
+    <string name="profile_preferences">profile_preferences</string>
+    <string name="profile_preferences_copy">profile_preferences_copy</string>
+    <string name="default_fullname_heading">Nome e cognome</string>
+    <string name="default_username_heading">Nome utente</string>
+    <string name="default_fullname">Nome Cognome</string>
+    <string name="default_username">Nome utente</string>
+    <string name="default_email_heading">Email</string>
+    <string name="default_email">La tua email</string>
+    <string name="default_city_heading">Città</string>
+    <string name="default_city">Città, Nazione</string>
+    <string name="default_bio_heading">Biografia</string>
+    <string name="default_bio">Scrivi qui la tua biografia</string>
+
+    <!-- Various Messages -->
+    <string name="profile_saved">Profilo salvato!</string>
+    <string name="upload_progress">Caricamento in corso:\u0020</string>
+    <string name="no_internet_connection">Nessuna connessione a internet!</string>
+    <string name="sign_in_cancelled">Operazione annullata!</string>
+    <string name="unknown_error">Errore sconosciuto!</string>
+    <string name="internal_error">Errore interno del server database!</string>
+    <string name="welcome_msg">Benvenuto su Share\'nBook!</string>
+    <string name="search_hint">Ricerca un libro…</string>
+    <string name="log_out">Logged Out!</string>
+    <string name="loading_dialog">Upload in corso..</string>
+    <string name="network_alert">Non è stata rilevata alcuna connessione a internet! E\' necessaria per il corretto funzionamento dell\'app! Vuoi controllare le tue impostazioni?</string>
+    <string name="to_be_implemented">Funzionalità da implementare!</string>
+
+    <!-- common words -->
+    <string name="search">Cerca</string>
+    <string name="settings">Impostazioni</string>
+    <string name="undo">Annulla</string>
+    <string name="clear">Pulisci</string>
+    <string name="confirm">Conferma</string>
+    <string name="contact_user">Contatta utente</string>
+    <string name="show_profile">Mostra profilo</string>
+    <string name="return_book">Restituisci libro</string>
+    <string name="personal_info">INFORMAZIONI PERSONALI</string>
+    <string name="preferred_categories">GENERI PREFERITI</string>
+
+    <!-- navigation bar -->
+    <string name="title_profile">Profilo</string>
+    <string name="title_showcase">Bacheca</string>
+    <string name="title_shareBook">Nuovo annuncio</string>
+    <string name="title_search">Cerca</string>
+    <string name="title_mybooks">Annunci e Scambi</string>
+    <string name="title_logout">Esci</string>
+
+
+    <!-- persistence keys -->
+    <string name="fullname_key">fullname</string>
+    <string name="username_key">username</string>
+    <string name="city_key">city</string>
+    <string name="bio_key">bio</string>
+    <string name="email_key">email</string>
+    <string name="userPicture_key">picture_uri</string>
+
+    <!-- copy keys for rollbacks-->
+    <string name="fullname_copy_key">fullname_copy</string>
+    <string name="username_copy_key">username_copy</string>
+    <string name="city_copy_key">city_copy</string>
+    <string name="bio_copy_key">bio_copy</string>
+    <string name="email_copy_key">email_copy</string>
+    <string name="userPicture_copy_key">user_picture_copy</string>
+
+    <!-- photo dialog items -->
+
+    <string name="photo_dialog_item_camera">Fotocamera</string>
+    <string name="photo_dialog_item_gallery">Galleria</string>
+    <string name="photo_dialog_title">Aggiungi immagine</string>
+    <string name="photo_dialog_select_gallery_method_title">Seleziona metodo</string>
+
+    <!-- exit dialogue -->
+
+    <string name="exit_request_title">Termina la modifica</string>
+    <string name="exit_rationale">Sei sicuro di voler uscire? ogni modifica verrà persa!</string>
+
+    <!-- complete profile dialog -->
+    <string name="complete_profile_title">Benvenuto!</string>
+    <string name="complete_profile_rational">Per favore, completa il tuo profilo prima di procedere.</string>
+
+    <!-- validate inputs -->
+    <string name="name_bad_format_rationale">Il tuo nome completo deve contenere solo lettere separate da uno spazio. Lettera iniziale in maiuscolo!</string>
+    <string name="name_length_format_rationale">Il tuo nome completo deve avere almeno 5 caratteri.</string>
+    <string name="bad_email"> Email non valida!</string>
+    <string name="email_bad_format_rationale">Se modifichi la mail, non lasciarla vuota per favore!</string>
+    <string name="username_bad_lenght_rationale">Per favore, il tuo username deve avere dai 3 ai 12 caratteri!</string>
+    <string name="username_already_exists">This username is already taken! Please use a different one</string>
+    <string name="city_bad_lenght_rationale">Per favore, la tua città deve contenere almeno 2 caratteri</string>
+    <string name="city_bad_format_rationale">Per favore, la tua città deve contenere solo caratteri. Iniziali maiuscole</string>
+    <string name="bio_bad_format_rationale">Per favore, non usare caratteri speciali nella tua biografia</string>
+    <string name="required_field">Questo campo è obbligatorio!</string>
+    <string name="isbn_bad_format">ISBN non valido</string>
+    <string name="field_required">Campo richiesto</string>
+    <string name="select_one_category">Devi selezionare almeno un genere.</string>
+    <string name="select_max_category">Devi selezionare al massimo cinque generi.</string>
+
+    <!-- permissions -->
+    <string name="permission_already_granted">Cominciamo! :-)</string>
+    <string name="permissions_granted">Permessi forniti!</string>
+    <string name="new_permission_request_title">Sono richiesti dei permessi</string>
+    <string name="permissions_rationale">L\'accesso alla fotocamera ed alla memoria sono richiesti per completare la modifica del profilo!</string>
+    <string name="camera_access_required">L\'accesso alla fotocamera è richiesto poter visualizzare l\'anteprima!</string>
+    <string name="ok">OK</string>
+    <string name="camera_permission_not_available">Permesso non autorizzato. Si richiedo permesso per l\'uso della fotocamera.</string>
+    <string name="camera_permission_available">Permesso per la fotocamera disponibile. Inizializzazione dell\'anteprima.</string>
+    <string name="camera_permission_granted">Permesso per la fotocamera autorizzato. Inizializzazione dell\'anteprima.</string>
+    <string name="camera_permission_denied">Il permesso per la fotocamera non è stato autorizzato.</string>
+    <string name="camera_unavailable"><b>La fotocamera non può essere avviata.</b>\nQuesto può verificarsi quando la fotocamera non è disponibile (e.g. è già in uso) o se il sistema non ha autorizzato l\'accesso (e.g. non è stato autorizzato il permesso per l\'accesso alla fotocamera).</string>
+
+    <!-- new permissions -->
+    <string name="permissions_rationale_title">Permessi necessari</string>
+    <string name="permissions_rationale_message">Abbiamo bisogno del tuo permesso per poterti fornire un\'esperienza d\'uso completa, grazie.</string>
+    <string name="permissions_denied_title">Permesso negato</string>
+    <string name="permissions_denied_message">Entrambi i permessi sono necessari per scattare foto ed accedere alla galleria.</string>
+    <string name="permissions_snackbar">Modifica i permessi concessi a quest\'app per sbloccare le funzionalità multimediali.</string>
+
+
+    <!-- ============================== -->
+
+    <!-- edit book strings -->
+    <string name="default_title_heading">Titolo</string>
+    <string name="default_subtitle_heading">Sottotitolo</string>
+    <string name="default_authors_heading">Autori</string>
+    <string name="default_publisher_heading">Editore</string>
+    <string name="default_published_date_heading">Data pubblicazione</string>
+    <string name="default_description_heading">Descrizione</string>
+    <string name="default_page_count_heading">Numero pagine</string>
+    <string name="default_categories_heading">Categoria</string>
+    <string name="default_language_heading">Lingua</string>
+    <string name="default_location_heading">Luogo di Consegna</string>
+    <string name="default_average_rating_heading">Media recensioni</string>
+    <string name="default_rating_count_heading">Numero recensioni</string>
+    <string name="default_book_condition_heading">Condizioni del libro</string>
+    <string name="default_tags_heading">Tags</string>
+    <string name="default_addPhoto_heading">Aggiungi Foto</string>
+
+    <string name="default_isbn" translatable="false">Inserisci il codice ISBN (da 10 a 13 cifre)</string>
+    <string name="default_title">Qual è il titolo del libro?</string>
+    <string name="default_subtitle">Il libro ha un sottotitolo?</string>
+    <string name="default_authors">Chi sono gli autori?</string>
+    <string name="default_publisher">Chi ha pubblicato il libro?</string>
+    <string name="default_published_date">Quando è stato pubblicato?</string>
+    <string name="default_description">Di cosa tratta?</string>
+    <string name="default_page_count">Quante pagine ha?</string>
+    <string name="default_categories">In quali categorie rientra?</string>
+    <string name="default_language">In che lingua è scritto?</string>
+    <string name="default_location">Dove intendi consegnarlo.</string>
+    <string name="default_saving_on_firebase">Salvataggio dati in corso…</string>
+    <string name="default_book_condition">Copertina rigata, pagine strappate…</string>
+    <string name="default_tags">Bestseller, consigliato per bambini…</string>
+    <string name="default_book_saved">Libro caricato correttamente!</string>
+    <string name="default_saving_photo">Caricamento foto\u0020</string>
+    <string name="of_preposition">\u0020di\u0020</string>
+    <string name="default_ongoing">\u0020in corso…</string>
+
+    <string name="max_allowed_book_photo">Puoi caricare al massimo 5 foto!</string>
+    <string name="min_photo_required">Devi aggiungere almeno una foto!</string>
+
+    <string name="edit_book">MODIFICA</string>
+    <string name="undo_borrow_req">ANNULLA RICHIESTA</string>
+
+
+
+    <!-- ============================== -->
+
+    <!-- search activity strings -->
+    <string name="sa_title">Risultati ricerca</string>
+    <string name="sa_no_results">Non siamo riusciti a trovare alcun risultato!</string>
+
+
+    <!-- ============================== -->
+
+    <!--        BOOK CONDITIONS         -->
+    <string-array name="book_conditions">
+        <item name="book_condition_new">Nuovo</item>
+        <item name="book_condition_likenew">Come nuovo</item>
+        <item name="book_condition_verygood">Molto buone</item>
+        <item name="book_condition_good">Buone</item>
+        <item name="book_condition_acceptable">Accettabili</item>
+        <item name="book_condition_notacceptable">Pessime</item>
+    </string-array>
+
+    <!--        BOOK CATEGORIES         -->
+    <string-array name="book_categories">
+        <item name="book_category_art">Arte/Musica/Cinema</item>
+        <item name="book_category_biography">Biografia</item>
+        <item name="book_category_comics">Fumetti</item>
+        <item name="book_category_economy">Economia</item>
+        <item name="book_category_fantasy">Fantasy</item>
+        <item name="book_category_food">Cucina</item>
+        <item name="book_category_hobbie">Hobby</item>
+        <item name="book_category_kids">Bambini</item>
+        <item name="book_category_tech">Tecnologia</item>
+        <item name="book_category_education">Educazione</item>
+        <item name="book_category_lgbt">LGBT</item>
+        <item name="book_category_health">Salute</item>
+        <item name="book_category_history">Storia</item>
+        <item name="book_category_entertainment">Intrattenimento</item>
+        <item name="book_category_law">Diritto</item>
+        <item name="book_category_literature">Letteratura</item>
+        <item name="book_category_medicine">Medicina</item>
+        <item name="book_category_thriller">Thriller</item>
+        <item name="book_category_politics">Politica</item>
+        <item name="book_category_religion">Religione</item>
+        <item name="book_category_romance">Romanzo</item>
+        <item name="book_category_scifi">Sci-fi</item>
+        <item name="book_category_science">Scienza</item>
+        <item name="book_category_sport">Sport</item>
+        <item name="book_category_travel">Viaggi</item>
+        <item name="book_category_travel">Altro</item>
+    </string-array>
+
+    <!-- ======================== -->
+
+    <!-- Search Bar  -->
+
+    <string name="searchbar_placeholder">Cerca un libro…</string>
+
+    <!-- Search filters -->
+    <string name="sba_btn_filters">FILTRA</string>
+    <string name="sba_btn_order">ORDINA</string>
+    <string name="fragment_sf_title">Filtri di ricerca</string>
+    <string name="fragmen_sf_msg">Qui puoi applicare dei filtri alla tua ricerca</string>
+    <string name="fragment_sf_address_hint">Scrivi un indirizzo e seleziona un raggio</string>
+
+
+    <string name="filter_distance">Filtra per distanza</string>
+    <string name="filter_distance_message"> Inserisci la città o l\'area in cui effettuare la ricerca e specifica una distanza:</string>
+    <string name="filter_distance_address">Luogo di consegna</string>
+    <string name="filter_distance_range">Raggio %1$d KM</string>
+    <string name="address_empty">Questo campo è obbligatorio!</string>
+
+    <string name="fragment_sf_et_conditions">Condizioni</string>
+
+    <string name="fragment_sf_et_categories">Categorie</string>
+
+    <string name="fragment_sf_et_author">Autore</string>
+    <string name="fragment_sf_et_author_hint">Scrivi nome e cognome dell\'autore</string>
+
+    <string name="fragment_sf_et_tags">Tags</string>
+    <string name="fragment_sf_et_tags_hint">Scrivi qui i tag da usare come filtro</string>
+
+    <!-- ======================== -->
+
+
+    <!-- FACEBOOK -->
+    <string name="facebook_application_id">375832199559673</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb375832199559673</string>
+
+    <!-- TWITTER -->
+    <string name="twitter_consumer_key" translatable="false">3vrnRb8M1coOnvdWLodpcJsWE</string>
+    <string name="twitter_consumer_secret" translatable="false">aELeyVY4NkVn3vql2nV2iy29bbMIwhFfRiG2JAsx4VEasoYVLE</string>
+
+    <!-- ShareBookActivity String -->
+    <string name="sba_title">Condividi un Libro</string>
+    <string name="sba_subtitle">Seleziona un\'opzione…</string>
+    <string name="sba_insert_isbn">Inserisci l\'ISBN</string>
+    <string name="sba_scan_isbn">Scansiona l\'ISBN utilizzando la fotocamera</string>
+    <string name="sba_manually_input">Inserisci manualmente i dettagli del libro</string>
+    <string name="sba_no_books_found">Nessun libro trovato</string>
+    <string name="sba_getting_book_details">Recupero informazioni sul libro…</string>
+    <string name="sba_no_connection">Connessione ad internet non disponibile</string>
+    <string name="sba_scan_your_barcode">Scansiona il Barcode del tuo Libro</string>
+
+
+    <!-- Chat things -->
+    <string name="chat_you">Tu: \n</string>
+    <string name="chat_write_msg">Scrivi un messaggio...</string>
+    <string name="unread_messages">Messaggi non letti</string>
+
+
+
+    <!-- Firebase keys -->
+    <string name="uid_key">uid_key</string>
+    <string name="user_profile_data_key">user_data</string>
+    <string name="empty_user_value">empty_user</string>
+    <string name="empty_profile_value">empty_profile</string>
+    <string name="profile_key">profile</string>
+    <string name="profile_value_placeholder">profile_empty</string>
+    <string name="users_books_placeholder">books_empty</string>
+    <string name="book_images_key">book_images</string>
+
+    <string name="mba_title">Annunci e scambi</string>
+    <string name="nav_my_books">Annunci e scambi</string>
+
+    <string name="no_books_alert_title">Nessun annuncio!</string>
+    <string name="no_books_suggestion">Ti consigliamo di creare un annuncio! Premi sul \'più\' in basso per crearne uno ora!</string>
+
+    <string name="error_save_camera_photo">Si è verificato un errore durante il salvataggio della foto, riprova.</string>
+
+    <string name="databaseError">Si è verificato un errore durante la lettura del database</string>
+    <string name="unknown_place">Posizione sconosciuta</string>
+    <string name="infoWindow_hint">Premi qui per ulteriori dettagli..</string>
+
+    <!-- ShowBook -->
+    <string name="showbook_toolbar_title">Dettagli libro</string>
+
+    <!-- MyChats -->
+    <string name="mychats_title" >Le mie conversazioni</string>
+    <string name="navigation_mychats">Messaggi</string>
+    <string name="no_chats_alert_title">Nessuna conversazione!</string>
+    <string name="no_chats_suggestion">Non hai conversazioni! Ti consigliamo di cercare un libro e contattare il proprietario!</string>
+
+    <!-- ShowCase -->
+    <string name="showcase_lastbook">Ultimi annunci</string>
+    <string name="showcase_favorites">I miei preferiti</string>
+    <string name="showcase_lucky">Mi sento fortunato</string>
+    <string name="showcase_closebooks">Annunci nelle vicinanze</string>
+    <string name="showcase_more_button">ALTRO</string>
+    <string name="showcase_add_favorite">Aggiunto ai Preferiti</string>
+    <string name="showcase_del_favorite">Rimosso dai Preferiti</string>
+    <string name="add_to_favorites">Aggiungi ai preferiti</string>
+    <string name="contact_owner">Contatta proprietario</string>
+    <string name="borrow_book">Richiedi in prestito</string>
+    <string name="undo_borrow_book">Annulla richiesta</string>
+    <string name="undo_borrow_book_small">Annulla richiesta</string>
+    <string name="undo_borrow_book_msg">Vuoi davvero eliminare la richiesta? Se si, il proprietario sarà informato della tua scelta.</string>
+    <string name="del_from_favorites">Rimuovi dai preferiti</string>
+    <string name="borrow_req_counter">Richieste: %1$d</string>
+    <string name="borrow_book_msg">Vuoi richiedere in prestito questo libro? Il proprietario sarà informato della tua richiesta
+    e potrà decidere di accettare o meno.</string>
+    <string name="borrow_request_done">Richiesta inviata correttamente</string>
+    <string name="borrow_request_undone">La tua richiesta è stata eliminata</string>
+    <string name="borrow_request_fail">La richiesta non può essere inviata in questo momento, riprova più tardi</string>
+    <string name="borrow_request_undone_fail">C\'è stato un errore, riprova più tardi</string>
+    <string name="request_already_sent">Richiesta già inviata</string>
+    <string name="borrow_request_accepted">Richiesta accettata correttamente</string>
+    <string name="borrow_request_rejected">Richiesta rifiutata, sii più generoso ;)</string>
+    <string name="request_time">Richiesto il:</string>
+    <string name="accept_request">ACCETTA</string>
+    <string name="reject_request">RIFIUTA</string>
+    <string name="accept_req_dialog">Accetta una richiesta di prestito per un tuo libro</string>
+    <string name="accept_req_dialog_msg">Vuoi accettare la richiesta di prestito di %1$s?</string>
+    <string name="reject_req_dialog">Rifuta una richiesta di prestito per un tuo libro</string>
+    <string name="reject_req_dialog_msg">Vuoi davvero rifiutare la richiesta di prestito di %1$s?</string>
+    <string name="book_returned_correctly">Libro restituito con successo! Ricordati di lasciare una recensione, grazie.</string>
+    <string name="book_unavailable">Libro non disponibile</string>
+
+    <!-- Books Cardview -->
+    <string name="authors">Autori: %1$s </string>
+    <string name="desc_img_book">Copertina del libro</string>
+    <string name="preferred_categories2">Generi preferiti</string>
+
+    <string name="tab_profile_info">Profilo</string>
+    <string name="tab_profile_reviews">Recensioni</string>
+    <string name="tab_mybooks_announcements">Miei Libri</string>
+    <string name="tab_mybooks_pendingRequests">Richieste in sospeso</string>
+    <string name="tab_mybooks_takenBooks">Miei scambi</string>
+
+    <!-- Exchange Fragment -->
+    <string name="exchanges_taken">Presi in prestito</string>
+    <string name="exchanges_given">Dati in prestito</string>
+    <string name="exchanges_archive">Archivio scambi</string>
+    <string name="no_taken_books">Non hai libri presi in prestito. Dovresti fare una richiesta per un libro di tuo interesse e attendere che questa venga accettata dal proprietario. </string>
+    <string name="no_given_books">Non hai libri dati in prestito. Attendi che qualcuno esprima interesse per un tuo libro e accetta la sua richiesta di prestito.</string>
+    <string name="contact_borrower">Contatta %1$s</string>
+    <string name="not_reviewed">RECENSISCI</string>
+    <string name="exchange_reviewed">RECENSITO</string>
+    <string name="return_book_title">Restituire libro?</string>
+    <string name="return_book_message">Conferma solo se hai già provveduto a restituire il libro al legittimo proprietario.</string>
+
+    <!-- ======================== -->
+    <!--    WriteReviewActivity   -->
+    <string name="writereview_review_given">Hai dato in prestito a </string>
+    <string name="writereview_review_loaned"> ti ha dato in prestito</string>
+    <string name="writereview_review_heading">La tua recensione</string>
+    <string name="writereview_review_headingMessage">Scrivi una recensione sull\'utente</string>
+    <string name="writereview_reviewTitle_heading">Titolo della recensione</string>
+    <string name="writereview_reviewTitle_hint">Scrivi qui il titolo della tua recensione</string>
+    <string name="writereview_reviewBody_heading">Testo della recensione</string>
+    <string name="writereview_reviewBody_hint">Scrivi qui il testo della tua recensione</string>
+    <string name="writereview_reviewVote_heading">Il tuo voto</string>
+    <string name="writereview_reviewVote_message">Esprimi un voto da 0 a 5 sull\'utente</string>
+    <string name="review_correctly_submitted">Recensione inviata correttamente</string>
+    <string name="review_error">Si è verificato un errore durante il caricamento della recensione</string>
+    <string name="published_by">Pubblicato da: %1$s</string>
+    <string name="announce_info">Informazioni sull\'annuncio</string>
+
+    <string name="writereview_creationTime_incipit">in data</string>
+    <string name="request_give">Le richieste per i tuoi libri</string>
+    <string name="request_take">Libri da te richiesti</string>
+    <string name="no_give_requests">Nessuna richiesta in sospeso per i tuoi libri.</string>
+    <string name="no_take_requests">Non hai ancora richiesto libri! Dai uno sguardo alla bacheca o ricerca qualcosa di tuo interesse.</string>
+    <string name="no_reviews">Questo utente non ha ancora alcuna recensione.</string>
+    <string name="no_requests">Tutte le richieste sono state rimosse.</string>
+    <string name="book_already_shared">Il libro è gia prestato; attendi il rientro per poterlo prestare nuovamente.</string>
+
+
+</resources>

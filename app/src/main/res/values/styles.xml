@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!-- Customize Material Button -->
+        <item name="colorButtonNormal">@color/colorAccent</item>
+
+        <item name="cardViewStyle">@style/CardView</item>
+
+    </style>
+
+    <style name="TextViewHeadingBig">
+
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/titlebig</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@drawable/textlines</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="TextViewHeading">
+
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@drawable/textlines</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+
+    <style name="TextViewContent">
+
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <!--
+    <style name="myShowPictureWindow" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:minWidth">350dp</item>
+        <item name="android:minHeight">350dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+-->
+    <style name="myShowPictureWindow" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:minHeight">350dp</item>
+        <item name="android:minWidth">350dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_theme</item>
+    </style>
+
+    <!-- ============================= -->
+    <!-- Style for the search activity -->
+
+    <style name="item_searchresult_title">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/title</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="item_searchresult_author">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/darkGrey</item>
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="item_searchresult_creationTime">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="item_searchresult_location">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:textSize">@dimen/paragraph</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+
+    <!-- ============================= -->
+
+</resources>
